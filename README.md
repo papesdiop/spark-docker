@@ -71,4 +71,4 @@ docker-compose up --scale spark-worker=3
 
 # How to K8s 
 from our docker-compose.yml, we can use Kompose to kubernetize (automatize) our docker-compose file.
-for more info, let's see https://kubernetes.io/docs/tasks/configure-pod-container/translate-compose-kubernetes/ 
+for more info, let's see https://kompose.io/ 
