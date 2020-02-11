@@ -15,7 +15,7 @@ RUN tar -xzf spark-2.4.5-bin-hadoop2.7.tgz && \
     mv spark-2.4.5-bin-hadoop2.7 /spark && \
     rm spark-2.4.5-bin-hadoop2.7.tgz
 
-
+"""""""""""""""""""""""""""""""""""""""""""
 
 # Set company name variable for next uses
 
@@ -67,3 +67,8 @@ COPY start-worker.sh /start-worker.sh
 
 # start cluster with 3 workers at scale
 docker-compose up --scale spark-worker=3
+
+
+# How to K8s 
+from our docker-compose.yml, we can use Kompose to kubernetize (automatize) our docker-compose file.
+for more info, let's see https://kubernetes.io/docs/tasks/configure-pod-container/translate-compose-kubernetes/ 
